@@ -9,7 +9,7 @@ class Products extends Component {
         };
     }
     async componentDidMount(){
-        const url = "http://localhost:9090/products";
+        const url = "https://nodeapp2-service.herokuapp.com/products";
         const response = await fetch(url, {
             headers: {
                 Authorization: `Bearer ${this.props.keycloak.token}`

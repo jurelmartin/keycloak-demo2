@@ -31,6 +31,6 @@ app.get("/products", keycloak.protect(), (req, res, next) => {
 });
 
 
-app.listen(9090, () => {
+app.listen(process.env.PORT || 9090, () => {
     console.log("Server running on port 9090");
 });
